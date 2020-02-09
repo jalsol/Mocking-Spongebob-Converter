@@ -1,5 +1,6 @@
 from tkinter import *
 import pyperclip
+import os
 
 FONT = 'Arial'
 SIZE = 20
@@ -9,7 +10,9 @@ root.resizable(width=False, height=False)
 root.title('mOcKiNg SpOnGeBoB cOnVeRtEr')
 root.geometry("600x150+30+30")
 
-root.iconbitmap(r"E:/useful_stuff/img/logo.ico")
+icon_name = os.path.abspath('./img/logo.ico')
+root.iconbitmap(icon_name)
+
 
 def center(toplevel):
     toplevel.update_idletasks()
